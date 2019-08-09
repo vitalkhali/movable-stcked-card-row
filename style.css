@@ -1,0 +1,37 @@
+body {
+  background: #333333;
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.cards {
+  display: flex;
+}
+
+.card {
+  background: white;
+  border-radius: 1rem;
+  padding: 3rem;
+  box-shadow: 4px 4px 15px 2px rgba(0, 0, 0, 0.75);
+  transition: 0.5s;
+}
+
+.card:not(:first-child) {
+  margin-left: -2rem;
+}
+
+/*movement of the card */
+.card:hover,
+.card:focus-within {
+  /*transition: 0.5s; */
+  transform: translateY(-1rem);
+}
+
+.card:hover ~ .card,
+.card:focus-within ~ .card {
+  /*background: red;*/
+  transform: translateX(2rem);
+}
