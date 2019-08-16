@@ -20,7 +20,7 @@ body {
 }
 
 .card:not(:first-child) {
-  margin-left: -2rem;
+  margin-left: -6rem;
 }
 
 /*movement of the card */
